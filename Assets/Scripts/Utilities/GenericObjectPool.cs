@@ -30,6 +30,12 @@ namespace CosmicCuration.Utilities
             return CreateNewPooledItem();
         }
 
+        public void ReturnItem(T item)
+        {
+            PooledItem<T> pooledItem = pooledItems.Find(item => item.Item.Equals(item));
+            pooledItem.isUsed = false;
+        }
+
         private T CreateNewPooledItem()
         {
             PooledItem<T> newItem = new PooledItem<T>();
