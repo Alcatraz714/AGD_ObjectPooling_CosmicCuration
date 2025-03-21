@@ -109,7 +109,7 @@ namespace CosmicCuration.Enemy
 
         public void SetEnemySpawning(bool setActive) => isSpawning = setActive;
 
-        public void ReturnEnemyToPool(EnemyController enemyToReturn) => enemyPool.ReturnEnemy(enemyToReturn);
+        public void ReturnEnemyToPool(EnemyController enemyToReturn) => enemyPool.ReturnItem(enemyToReturn);
     }
 
     public enum EnemyOrientation
