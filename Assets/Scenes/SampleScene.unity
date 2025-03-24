@@ -2291,6 +2291,12 @@ PrefabInstance:
       objectReference: {fileID: 1030558812}
     - target: {fileID: 1364658040279970260, guid: 059d6c966602d204f8b1f0c5d6dff02d,
         type: 3}
+      propertyPath: vfxPrefab
+      value: 
+      objectReference: {fileID: 2674352075565639642, guid: c68733eb7fedaae4299ec0fea2f96c42,
+        type: 3}
+    - target: {fileID: 1364658040279970260, guid: 059d6c966602d204f8b1f0c5d6dff02d,
+        type: 3}
       propertyPath: audioEffectSource
       value: 
       objectReference: {fileID: 2057518303}
