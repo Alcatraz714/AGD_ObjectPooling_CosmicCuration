@@ -12,6 +12,8 @@ namespace CosmicCuration.VFX
             vfxView.SetController(this);
         }
 
-        public void Configure(Vector2 spawnPosition) => vfxView.ConfigureAndPlay(spawnPosition);
+        public void Configure(VFXType vFXType ,Vector2 spawnPosition) => vfxView.ConfigureAndPlay(vFXType ,spawnPosition);
+
+        public void OnParticleEffectCompleted() => GameService.Instance.GetVFXService().ReturnVFXToPool(this);
     } 
 }
